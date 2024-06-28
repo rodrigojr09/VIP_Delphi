@@ -1,0 +1,76 @@
+unit Empresa;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.Generics.Collections;
+
+type
+  TSetor = class
+  private
+    FNome: string;
+  public
+    constructor Create(const AValue: string);
+    property Nome: string read FNome write FNome;
+  end;
+
+  TEmpresa = class
+  private
+    FNome: string;
+    FSetores: TObjectList<TSetor>;
+    function GetNome: string;
+    function GetSetor(Index: Integer): TSetor;
+  public
+    constructor Create(const AValue: string);
+    destructor Destroy; override;
+    procedure AddSetor(ASetor: TSetor);
+    procedure RemoveSetor(ASetor: TSetor);
+    property Nome: string read GetNome;
+    property Setores[Index: Integer]: TSetor read GetSetor; default;
+  end;
+
+implementation
+
+{ TSetor }
+
+constructor TSetor.Create(const AValue: string);
+begin
+  FNome := AValue;
+end;
+
+{ TEmpresa }
+
+constructor TEmpresa.Create(const AValue: string);
+begin
+  FNome := AValue;
+  FSetores := TObjectList<TSetor>.Create;
+end;
+
+destructor TEmpresa.Destroy;
+begin
+  FSetores.Free;
+  inherited;
+end;
+
+function TEmpresa.GetNome: string;
+begin
+  Result := FNome;
+end;
+
+function TEmpresa.GetSetor(Index: Integer): TSetor;
+begin
+  Result := FSetores[Index];
+end;
+
+procedure TEmpresa.AddSetor(ASetor: TSetor);
+begin
+  FSetores.Add(ASetor);
+end;
+
+procedure TEmpresa.RemoveSetor(ASetor: TSetor);
+begin
+  FSetores.Remove(ASetor);
+end;
+
+end.
+

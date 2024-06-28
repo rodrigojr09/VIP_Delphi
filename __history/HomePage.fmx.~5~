@@ -1,0 +1,74 @@
+object HomeForm: THomeForm
+  Left = 405
+  Top = 64
+  Caption = 'VIP Levantamento'
+  ClientHeight = 474
+  ClientWidth = 485
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  Left = 405
+  Top = 64
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF18FC2F
+    Size.Width = 485.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 485.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'VIP - Levantamento'
+      TabOrder = 0
+    end
+  end
+  object Label2: TLabel
+    Position.X = 160.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Nome da Empresa:'
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 160.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = xFF01F901
+    Position.X = 160.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    OnClick = Rectangle2Click
+    object Label3: TLabel
+      Align = Client
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 169.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Entrar'
+      TabOrder = 0
+      OnClick = Label3Click
+    end
+  end
+end

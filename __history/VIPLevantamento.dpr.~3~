@@ -1,0 +1,17 @@
+program VIPLevantamento;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  HomePage in 'HomePage.pas' {HomeForm},
+  Empresa in 'Empresa.pas',
+  NovoSetor in 'NovoSetor.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(THomeForm, HomeForm);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

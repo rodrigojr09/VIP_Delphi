@@ -1,0 +1,14 @@
+program VIPLevantamento;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  HomePage in 'HomePage.pas' {HomeForm};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(THomeForm, HomeForm);
+  Application.Run;
+end.

@@ -1,0 +1,45 @@
+unit HomePage;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, Empresa;
+
+type
+  THomeForm = class(TForm)
+    Rectangle1: TRectangle;
+    Label1: TLabel;
+    Label2: TLabel;
+    txtNome: TEdit;
+    btnEntrar: TRectangle;
+    Label3: TLabel;
+    procedure btnEntrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    Nome:string;
+  end;
+
+var
+  HomeForm: THomeForm;
+
+implementation
+
+{$R *.fmx}
+  uses NovoSetor;
+
+procedure THomeForm.btnEntrarClick(Sender: TObject);
+var
+  Setor:TSetor;
+begin
+   Empresa := TEmpresa.Create(txtNome.Text);
+   Setor := TSetor.Create(Self);
+   try
+    Setor.ShowModal;
+   finally
+     Setor.Free;
+   end;
+end;
+end.

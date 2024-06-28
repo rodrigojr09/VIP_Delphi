@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/28 13:39:24.000.762,=C:\Users\user\Desktop\VIP_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 13:52:31.000.577,C:\Users\user\Desktop\VIP_Delphi\Unit1.pas=C:\Users\user\Desktop\VIP_Delphi\HomePAge.pas</Transaction>
+    <Transaction>2024/06/28 13:52:31.000.577,C:\Users\user\Desktop\VIP_Delphi\Unit1.fmx=C:\Users\user\Desktop\VIP_Delphi\HomePAge.fmx</Transaction>
+    <Transaction>2024/06/28 13:52:40.000.307,C:\Users\user\Desktop\VIP_Delphi\Project1.dproj=C:\Users\user\Desktop\VIP_Delphi\VIPLevantamento.dproj</Transaction>
+    <Transaction>2024/06/28 13:53:18.000.239,C:\Users\user\Desktop\VIP_Delphi\HomePAge.pas=C:\Users\user\Desktop\VIP_Delphi\HomePage2.pas</Transaction>
+    <Transaction>2024/06/28 13:53:18.000.239,C:\Users\user\Desktop\VIP_Delphi\HomePAge.fmx=C:\Users\user\Desktop\VIP_Delphi\HomePage2.fmx</Transaction>
+    <Transaction>2024/06/28 13:53:21.000.454,C:\Users\user\Desktop\VIP_Delphi\HomePage2.fmx=C:\Users\user\Desktop\VIP_Delphi\HomePage.fmx</Transaction>
+    <Transaction>2024/06/28 13:53:21.000.454,C:\Users\user\Desktop\VIP_Delphi\HomePage2.pas=C:\Users\user\Desktop\VIP_Delphi\HomePage.pas</Transaction>
+    <Transaction>2024/06/28 15:28:45.000.571,=C:\Users\user\Desktop\VIP_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 15:29:01.000.222,C:\Users\user\Desktop\VIP_Delphi\Unit1.pas=C:\Users\user\Desktop\VIP_Delphi\Empresa.pas</Transaction>
+    <Transaction>2024/06/28 15:39:48.000.708,=C:\Users\user\Desktop\VIP_Delphi\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 15:48:07.000.640,C:\Users\user\Desktop\VIP_Delphi\Unit1.fmx=C:\Users\user\Desktop\VIP_Delphi\NovoSetor.fmx</Transaction>
+    <Transaction>2024/06/28 15:48:07.000.640,C:\Users\user\Desktop\VIP_Delphi\Unit1.pas=C:\Users\user\Desktop\VIP_Delphi\NovoSetor.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64="" Android="R9QNC04LMVP"/>
+	</ActiveMobileDevice>
+</BorlandProject>

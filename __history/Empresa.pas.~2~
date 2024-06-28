@@ -1,0 +1,43 @@
+unit Empresa;
+
+interface
+uses
+  System.SysUtils, System.Classes, System.Generics.Collections;
+
+type
+  TSetor = class
+  private
+    Nome: string;
+  public
+    constructor Create(const value:string);
+end;
+  TEmpresa = class
+      function GetNome:string;
+  private
+    Nome: string;
+    Setores: TObjectList<TSetor>;
+  public
+    constructor Create(const value:string);
+end;
+
+implementation
+
+{ TSetor }
+
+constructor TSetor.Create(const value: string);
+begin
+  Nome := value;
+end;
+
+{ TEmpresa }
+
+constructor TEmpresa.Create(const value:string);
+begin
+  Nome := value;
+end;
+
+function TEmpresa.GetNome: string;
+begin
+   Result := Nome;
+end;
+end.

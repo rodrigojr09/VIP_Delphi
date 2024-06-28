@@ -1,0 +1,34 @@
+object Form1: TForm1
+  Left = 469
+  Top = 42
+  Caption = 'Form1'
+  ClientHeight = 474
+  ClientWidth = 485
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Left = 469
+  Top = 42
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF18FC2F
+    Size.Width = 485.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Title: TLabel
+      Align = Client
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 485.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'VIP - Levantamento - '
+      TabOrder = 0
+    end
+  end
+end
